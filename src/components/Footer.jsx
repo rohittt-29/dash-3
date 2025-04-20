@@ -1,4 +1,4 @@
-import { LOGO } from "../utils/constants";
+import { Logo } from "../utils/constants";
 
 const Footer = () => {
   return (
@@ -23,7 +23,7 @@ const Footer = () => {
         
         {/* Branding */}
         <div className="text-center md:text-left">
-          <img className="w-16 md:w-24 ml-10 mb-2 md:mb-2" src={LOGO} alt="logo" />
+          <img className="w-16 md:w-24 ml-10 mb-2 md:mb-2" src={Logo} alt="logo" />
           <p className="text-xs md:text-sm mt-2 md:mt-0">Your daily dose of crypto stats 💹</p>
         </div>
 

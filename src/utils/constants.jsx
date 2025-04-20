@@ -1,6 +1,6 @@
 import logo from '../assets/Logo.svg';
 
-export const LOGO = logo;
+export const Logo = logo;
 
 export const BG_URL = "https://images.unsplash.com/photo-1639152201720-5e536d254d81?w=1920&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fGNyeXB0b2N1cnJlbmN5fGVufDB8fDB8fHww"
 
