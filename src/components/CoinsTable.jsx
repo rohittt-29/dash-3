@@ -82,7 +82,7 @@ const CoinsTable = () => {
       </div>
 
       {/* 🔧 Scrollable div with styled scrollbar */}
-      <div className="overflow-x-auto max-h-[300px] md:max-h-[500px] rounded border border-gray-600 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-900">
+      <div className="overflow-x-auto max-h-[600px] md:max-h-[500px] rounded border border-gray-600 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-900">
         <Table className="w-full cursor-pointer text-left text-sm">
           <TableHeader>
             <TableRow className="sticky top-0 bg-gray-300 text-white z-20">
@@ -110,7 +110,7 @@ const CoinsTable = () => {
                   {coin.price_change_percentage_24h?.toFixed(2)}%
                 </TableCell>
                 <TableCell className="text-right">
-                  ₹ {coin.market_cap.toLocaleString("en-IN")}
+                  ₹ {currency === 'INR' ? '₹' : currency === 'USD' ? '$' : ''}{coin.market_cap.toLocaleString("en-IN")}
                 </TableCell>
               </TableRow>
             ))}
